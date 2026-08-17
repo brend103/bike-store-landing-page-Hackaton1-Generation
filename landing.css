@@ -32,7 +32,7 @@ body{
     gap: 25px;
 }
 .Navegacion a {
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
@@ -40,7 +40,7 @@ body{
 }
 .Encabezado div a:hover,
 .Navegacion a:hover {
-    color: #F97316;
+    color: #F97316 !important;
 }
 main {
   flex: 1;
@@ -91,4 +91,14 @@ main {
 }
 .footer-copyright p {
   font-size: 13px;
+}
+
+#servicios .card {
+    transition: all 0.3s ease; 
+    border: 2px solid transparent !important; 
+}
+#servicios .card:hover {
+    transform: translateY(-10px);
+    border: 2px solid #FFD700 !important;
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4) !important;
 }

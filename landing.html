@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedal X </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="landing.css">
 </head>
 
@@ -13,15 +14,166 @@
             <a href="index.html"><img src="img/LOGO.svg" alt="Apex Bikes Logo"></a>
         </div>
         <nav class="Navegacion">
-            <a>Inicio<a>
-            <a>Servicios</a>
-            <a>Modelos</a>
-            <a>Contactos</a> 
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#modelos">Modelos</a>
+            <a href="#contacto">Contactos</a>
         </nav>
     </header>
 
-    <main id="inicio">
+<main id="inicio">
+  <br><br>
+<div class="container-fluid p-0">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-6 p-5">
+            <h1 style="color: #1565C0; font-size: 80px; font-weight: bold; margin-bottom: 30px;">Pedal X</h1>
+            <p style="font-size: 26px; line-height: 1.5; color: #333;">
+              Bienvenido a Pedal X Descubre la bicicleta perfecta para ti y descubre un mundo nuevo en el ciclismo.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="https://images.unsplash.com/photo-1541625602330-2277a4c46182?q=80&w=2070&auto=format&fit=crop" style="width: 90%; height: 70vh; object-fit: cover; display: block;">
+          </div>
+        </div>
+      </div>
+      <br><br>
 
+<div class="container mt-5 mb-5" id="nosotros">
+    <div class="row justify-content-center">
+      <div class="col-md-8 p-md-4">
+        <h2 class="text-center fw-bold" style="color: #1565C0; font-size: 40px; margin-bottom: 20px;">Acerca de nosotros</h2>
+        <p style="font-size: 18px; color: #555; line-height: 1.6; text-align: justify;">
+          En <strong>Pedal X</strong>, compartimos tu pasión por el ciclismo. Con más de 40 años de experiencia en México, nos hemos dedicado a ofrecer soluciones confiables y de la más alta calidad para ciclistas de todos los niveles.
+        </p>
+        <p style="font-size: 18px; color: #555; line-height: 1.6; text-align: justify;">
+          Nuestro compromiso es acompañarte en cada ruta, asegurando que tengas la bicicleta, los accesorios y el mantenimiento perfectos para disfrutar de la libertad y emoción que solo el pedalear puede brindar.
+        </p>
+      </div>
+    </div>
+  </div>
+
+      <div class="container mt-5 text-center">
+        <h2 class="fw-bold" style="color: #1565C0; font-size: 40px;">Conoce nuestros modelos</h2>
+      </div>
+
+      <div class="container mt-5 mb-5">
+        <div id="carruselPedalX" class="carousel slide shadow rounded overflow-hidden" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carruselPedalX" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carruselPedalX" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carruselPedalX" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=2070&auto=format&fit=crop" class="d-block w-100" style="height: 400px; object-fit: cover; object-position: center;" alt="Bicicleta de montaña">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 text-white rounded p-2 mb-4">
+                <h5>Domina cualquier terreno</h5>
+                <p>Encuentra la bicicleta de montaña perfecta para tus aventuras más extremas.</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?q=80&w=2022&auto=format&fit=crop" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Bicicleta de ruta">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 text-white rounded p-2 mb-4">
+                <h5>Velocidad y Aerodinámica</h5>
+                <p>Conoce nuestros modelos de ruta diseñados para el máximo rendimiento.</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <img src="https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?q=80&w=2148&auto=format&fit=crop" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Accesorios para bicicleta">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 text-white rounded p-2 mb-4">
+                <h5>Equípate como un profesional</h5>
+                <p>Descubre nuestra selección de accesorios y refacciones de primera calidad.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carruselPedalX" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carruselPedalX" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container mt-5 mb-5" id="servicios">
+
+        <div class="text-center mb-5">
+          <h2 class="fw-bold" style="color: #1565C0; font-size: 40px;">Nuestros Servicios</h2>
+        </div>
+
+        <div class="row text-center">
+          
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="img/Bicicletas.jpg" class="card-img-top" alt="Venta de bicicletas" style="height: 250px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title fw-bold" style="color: #1565C0;">Venta de Bicicletas</h5>
+                <p class="card-text text-secondary">Encuentra el modelo ideal para ti. Ofrecemos bicicletas de montaña, ruta y urbanas de la más alta calidad para todas las edades.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="img/Accesorios.jpeg" class="card-img-top" alt="Accesorios para bicicletas" style="height: 250px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title fw-bold" style="color: #1565C0;">Accesorios</h5>
+                <p class="card-text text-secondary">Equípate con lo mejor. Tenemos cascos, luces, candados, ánforas y ropa especializada para tu seguridad y comodidad en cada viaje.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="img/Mantenimiento.jpeg" class="card-img-top" alt="Mantenimiento de bicicletas" style="height: 250px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title fw-bold" style="color: #1565C0;">Mantenimiento</h5>
+                <p class="card-text text-secondary">Mantén tu bicicleta en perfectas condiciones. Nuestros mecánicos expertos ofrecen servicio técnico, ajustes y reparaciones completas.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+  <div class="container mt-5 mb-5" id="contacto">
+    
+    <div class="text-center mb-4">
+      <h2 class="fw-bold" style="color: #1565C0; font-size: 40px;">¿Tienes alguna duda o te interesa algo? Contáctanos</h2>
+      <p class="text-secondary fs-5 mt-3">Llena el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form class="shadow p-4 p-md-5 rounded bg-white border">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="nombre" class="form-label fw-bold" style="color: #1565C0;">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="telefono" class="form-label fw-bold" style="color: #1565C0;">Teléfono</label>
+              <input type="tel" class="form-control" id="telefono" placeholder="Tu número de teléfono" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label fw-bold" style="color: #1565C0;">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo" placeholder="tu@correo.com" required>
+          </div>
+          <div class="mb-4">
+            <label for="mensaje" class="form-label fw-bold" style="color: #1565C0;">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn text-white w-100 fw-bold" style="background-color: #1565C0; padding: 12px; font-size: 18px; transition: background-color 0.3s ease;">Enviar Mensaje</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
     </main>
 
   <footer class="footer">
@@ -60,5 +212,6 @@
       </p>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
