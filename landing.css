@@ -1,9 +1,9 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 body{
-    background-color: #fff;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -16,31 +16,27 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.logo img {
-    width: 110px;
+.logo a {
+  display: block;
 }
-.Encabezado div a {
-    color: #FFFFFF;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-    transition: color 0.3s ease;
+.logo img {
+    display: block;
+    width: 100px;
+    height: auto;
 }
 .Navegacion{
     display: flex;
-    gap: 25px;
+    align-items: center;
+    gap: 32px;
 }
 .Navegacion a {
     color: #FFFFFF !important;
     text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
+    font-size: 20px;
     transition: color 0.3s ease;
 }
-.Encabezado div a:hover,
 .Navegacion a:hover {
-    color: #F97316 !important;
+    color: #FFD700 !important;
 }
 main {
   flex: 1;
@@ -81,7 +77,7 @@ main {
   text-decoration: none;
 }
 .footer-columna a:hover {
-  color: #F97316;
+  color: #FFD700;
 }
 .footer-copyright {
   border-top: 1px solid #FFFFFF;
@@ -101,4 +97,28 @@ main {
     transform: translateY(-10px);
     border: 2px solid #FFD700 !important;
     box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4) !important;
+}
+.botones-inicio {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+.botones-inicio a {
+  padding: 12px 22px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.boton-modelos {
+  background-color: #F97316;
+  color: #FFFFFF;
+  border: 2px solid #F97316;
+}
+.boton-servicios {
+  background-color: #FFFFFF;
+  color: #1565C0;
+  border: 2px solid #1565C0;
+}
+.botones-inicio a:hover {
+  opacity: 0.8;
 }
