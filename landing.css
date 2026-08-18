@@ -8,20 +8,28 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
 }
 .Encabezado{
     background-color: #1565C0;
-    padding: 10px 40px;    
+    padding: 5px 40px;    
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 .logo a {
   display: block;
 }
 .logo img {
     display: block;
-    width: 100px;
+    width: 85px;
     height: auto;
 }
 .Navegacion{
@@ -44,14 +52,13 @@ main {
 .footer {
   background-color: #1565C0;
   color: #FFFFFF;
-  padding: 40px 30px 15px;
+  padding: 25px 30px 12px;
 }
 .footer-contenido {
   display: flex;
   flex-wrap: wrap;
-  gap: 35px;
+  gap: 25px;
   justify-content: space-between;
-
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -60,8 +67,8 @@ main {
   min-width: 200px;
 }
 .footer-logo {
-  width: 120px;
-  margin-bottom: 15px;
+  width: 100px;
+  margin-bottom: 10px;
 }
 .footer-columna h3 {
   color: #eee8e8;
@@ -81,8 +88,8 @@ main {
 }
 .footer-copyright {
   border-top: 1px solid #FFFFFF;
-  margin-top: 30px;
-  padding-top: 15px;
+  margin-top: 20px;
+  padding-top: 12px;
   text-align: center;
 }
 .footer-copyright p {
@@ -121,4 +128,70 @@ main {
 }
 .botones-inicio a:hover {
   opacity: 0.8;
+}
+.imagen-producto {
+  height: 220px;
+  object-fit: contain;
+  padding: 15px;
+}
+
+.precio-producto {
+  color: #1565C0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.boton-agregar {
+  background-color: #F97316;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.boton-agregar:hover {
+  background-color: #F97316;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+#ventana-carrito .modal-content {
+  border: 2px solid #1565C0;
+}
+
+#titulo-carrito {
+  color: #1565C0;
+  font-weight: bold;
+}
+
+#ventana-carrito .modal-body p {
+  font-size: 18px;
+}
+
+.boton-cerrar {
+  background-color: #1565C0;
+  color: #FFFFFF;
+}
+
+.boton-cerrar:hover {
+  background-color: #1565C0;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+#mensaje-carrito {
+  color: #F97316;
+  font-weight: bold;
+}
+.icono-carrito {
+  font-size: 20px;
+  margin-right: 5px;
+}
+#mensaje-formulario {
+  display: none;
+  max-width: 450px;
+  margin: 15px auto 0;
+  padding: 12px;
+  color: #1565C0;
+  background-color: #FFFFFF;
+  border: 2px solid #1565C0;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
 }
