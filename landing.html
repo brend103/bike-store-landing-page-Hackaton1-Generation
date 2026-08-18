@@ -60,60 +60,225 @@
       <div class="col-md-8 p-md-4">
         <h2 class="text-center fw-bold" style="color: #1565C0; font-size: 40px; margin-bottom: 20px;">Acerca de nosotros</h2>
         <p style="font-size: 18px; color: #555; line-height: 1.6; text-align: justify;">
-          En <strong>Pedal X</strong>, compartimos tu pasión por el ciclismo. Con más de 40 años de experiencia en México, nos hemos dedicado a ofrecer soluciones confiables y de la más alta calidad para ciclistas de todos los niveles.
+          En <strong>Pedal X</strong>, compartimos tu pasión por el ciclismo. Con más de 8 años de experiencia en México, nos hemos dedicado a ofrecer soluciones confiables y de la más alta calidad para ciclistas de todos los niveles.
         </p>
         <p style="font-size: 18px; color: #555; line-height: 1.6; text-align: justify;">
-          Nuestro compromiso es acompañarte en cada ruta, asegurando que tengas la bicicleta, los accesorios y el mantenimiento perfectos para disfrutar de la libertad y emoción que solo el pedalear puede brindar.
+          Nuestro compromiso es acompañarte en todo momento, asegurando que tengas la bicicleta, los accesorios y el mantenimiento perfectos para disfrutar de la libertad y emoción que solo el pedalear puede brindar.
         </p>
       </div>
     </div>
   </div>
 
-      <div class="container mt-5 text-center">
-        <h2 class="fw-bold" style="color: #1565C0; font-size: 40px;">Conoce nuestros modelos</h2>
+      <div class="container mt-5 text-center" id="modelos">
+        <h2 class="fw-bold" style="color: #1565C0; font-size: 40px;">Conoce nuestros modelos más vendidos.</h2>
       </div>
 
-      <div class="container mt-5 mb-5">
-        <div id="carruselPedalX" class="carousel slide shadow rounded overflow-hidden" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carruselPedalX" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carruselPedalX" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carruselPedalX" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="4000">
-              <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=2070&auto=format&fit=crop" class="d-block w-100" style="height: 400px; object-fit: cover; object-position: center;" alt="Bicicleta de montaña">
-              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 text-white rounded p-2 mb-4">
-                <h5>Domina cualquier terreno</h5>
-                <p>Encuentra la bicicleta de montaña perfecta para tus aventuras más extremas.</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="4000">
-              <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?q=80&w=2022&auto=format&fit=crop" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Bicicleta de ruta">
-              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 text-white rounded p-2 mb-4">
-                <h5>Velocidad y Aerodinámica</h5>
-                <p>Conoce nuestros modelos de ruta diseñados para el máximo rendimiento.</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="4000">
-              <img src="https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?q=80&w=2148&auto=format&fit=crop" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Accesorios para bicicleta">
-              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 text-white rounded p-2 mb-4">
-                <h5>Equípate como un profesional</h5>
-                <p>Descubre nuestra selección de accesorios y refacciones de primera calidad.</p>
-              </div>
+<div class="container-fluid px-4 mt-4 mb-5">
+  <div
+    id="carruselPedalX"
+    class="carousel slide shadow rounded overflow-hidden"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carruselPedalX" data-bs-slide-to="0" class="active" aria-label="Ruta"></button>
+      <button type="button" data-bs-target="#carruselPedalX" data-bs-slide-to="1" aria-label="Montaña"></button>
+      <button type="button" data-bs-target="#carruselPedalX" data-bs-slide-to="2" aria-label="Urbana"></button>
+      <button type="button" data-bs-target="#carruselPedalX" data-bs-slide-to="3" aria-label="Carga"></button>
+      <button type="button" data-bs-target="#carruselPedalX" data-bs-slide-to="4" aria-label="Eléctrica"></button>
+      <button type="button" data-bs-target="#carruselPedalX" data-bs-slide-to="5" aria-label="Infantil"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row g-0">
+          <div class="col-md-7 bg-white">
+            <div class="ratio ratio-21x9">
+              <img
+                src="img/ruta.png"
+                class="w-100 h-100 object-fit-contain"
+                alt="Bicicleta de ruta"
+              >
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carruselPedalX" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carruselPedalX" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-          </button>
+          <div
+            class="col-md-5 d-flex flex-column justify-content-center text-white p-5"
+            style="background-color: #1565C0;"
+          >
+            <p class="fw-bold mb-2" style="color: #FFD700;">
+              BICICLETA DE RUTA
+            </p>
+            <h3 class="display-6 fw-bold mb-3">Scott Speedtester Gravel 10</h3>
+            <p class="fs-5">
+              Diseñada para alcanzar mayor velocidad sobre pavimento.
+              Cuenta con ruedas delgadas y manubrio curvo para recorrer
+              largas distancias.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row g-0">
+          <div class="col-md-7 bg-white">
+            <div class="ratio ratio-21x9">
+              <img
+                src="img/montaña.png"
+                class="w-100 h-100 object-fit-contain"
+                alt="Bicicleta de montaña"
+              >
+            </div>
+          </div>
+          <div
+            class="col-md-5 d-flex flex-column justify-content-center text-white p-5"
+            style="background-color: #1565C0;"
+          >
+            <p class="fw-bold mb-2" style="color: #FFD700;">
+              BICICLETA DE MONTAÑA
+            </p>
+            <h3 class="display-6 fw-bold mb-3">Neon Xtrail</h3>
+            <p class="fs-5">
+              Preparada para terracería, piedras y caminos difíciles.
+              Tiene suspensión y llantas anchas con tacos para mejorar
+              el control y la estabilidad.
+            </p>
+          </div>
+
         </div>
       </div>
 
+      <div class="carousel-item">
+        <div class="row g-0">
+
+          <div class="col-md-7 bg-white">
+            <div class="ratio ratio-21x9">
+              <img
+                src="img/urbana.png"
+                class="w-100 h-100 object-fit-contain"
+                alt="Bicicleta urbana"
+              >
+            </div>
+          </div>
+
+          <div
+            class="col-md-5 d-flex flex-column justify-content-center text-white p-5"
+            style="background-color: #1565C0;"
+          >
+            <p class="fw-bold mb-2" style="color: #FFD700;">
+              BICICLETA URBANA
+            </p>
+            <h3 class="display-6 fw-bold mb-3"> Voltbull F1</h3>
+            <p class="fs-5">
+              Ideal para trasladarse al trabajo o pasear por la ciudad.
+              Ofrece una posición recta al manejar y está enfocada en
+              la comodidad.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row g-0">
+
+          <div class="col-md-7 bg-white">
+            <div class="ratio ratio-21x9">
+              <img
+                src="img/carga.jpeg"
+                class="w-100 h-100 object-fit-contain"
+                alt="Bicicleta de carga">
+            </div>
+          </div>
+
+          <div
+            class="col-md-5 d-flex flex-column justify-content-center text-white p-5"
+            style="background-color: #1565C0;"
+          >
+            <p class="fw-bold mb-2" style="color: #FFD700;">
+              BICICLETA DE CARGA
+            </p>
+            <h3 class="display-6 fw-bold mb-3">Nilox C1 Cargo Light</h3>
+            <p class="fs-5">
+              Diseñada para transportar compras, paquetes u otros
+              objetos. Es una opción práctica para recorridos y
+              actividades dentro de la ciudad.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row g-0">
+          <div class="col-md-7 bg-white">
+            <div class="ratio ratio-21x9">
+              <img
+                src="img/electrica.jpeg"
+                class="w-100 h-100 object-fit-contain"
+                alt="Bicicleta eléctrica"
+              >
+            </div>
+          </div>
+          <div
+            class="col-md-5 d-flex flex-column justify-content-center text-white p-5"
+            style="background-color: #1565C0;"
+          >
+            <p class="fw-bold mb-2" style="color: #FFD700;">
+              BICICLETA ELÉCTRICA
+            </p>
+            <h3 class="display-6 fw-bold mb-3">Velotric Discover 2</h3>
+            <p class="fs-5">
+              Cuenta con un motor que ayuda durante el pedaleo.
+              Es adecuada para trayectos largos, pendientes o personas
+              que buscan trasladarse con menor esfuerzo.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row g-0">
+          <div class="col-md-7 bg-white">
+            <div class="ratio ratio-21x9">
+              <img
+                src="img/infantil.png"
+                class="w-100 h-100 object-fit-contain"
+                alt="Bicicleta infantil"
+              >
+            </div>
+          </div>
+          <div
+            class="col-md-5 d-flex flex-column justify-content-center text-white p-5"
+            style="background-color: #1565C0;"
+          >
+            <p class="fw-bold mb-2" style="color: #FFD700;">
+              BICICLETA INFANTIL
+            </p>
+            <h3 class="display-6 fw-bold mb-3">Strider 12 Sport</h3>
+            <p class="fs-5">
+              Modelo pequeño y seguro para que los niños comiencen
+              a practicar ciclismo. Su tamaño facilita el control,
+              el equilibrio y el aprendizaje.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carruselPedalX"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carruselPedalX"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+</div>
       <div class="container mt-5 mb-5" id="servicios">
 
         <div class="text-center mb-5">
@@ -177,7 +342,7 @@
           </div>
           <div class="mb-3">
             <label for="correo" class="form-label fw-bold" style="color: #1565C0;">Correo electrónico</label>
-            <input type="email" class="form-control" id="correo" placeholder="tu@correo.com" required>
+            <input type="email" class="form-control" id="correo" placeholder="correo@gmail.com" required>
           </div>
           <div class="mb-4">
             <label for="mensaje" class="form-label fw-bold" style="color: #1565C0;">Mensaje</label>
@@ -219,7 +384,6 @@
       </div>
       <div class="footer-columna">
         <h3>Ubicación</h3>
-        <p>Blvd. Bicicleta 254</p>
         <p>Manzanillo, Colima, México</p>
       </div>
     </div>
