@@ -15,18 +15,41 @@
 </head>
 
 <body>
-    <header class ="Encabezado">
-        <div class="logo">
-            <a href="index.html"><img src="img/LOGO.svg"></a>
-        </div>
-        <nav class="Navegacion">
-            <a href="#inicio">Inicio</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#modelos">Modelos</a>
-            <a href="#contacto">Contacto</a>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#ventana-carrito"><i class="bi bi-cart3 icono-carrito" aria-hidden="true"></i>Carrito (<span id="contador-carrito">0</span>)</a>
-        </nav>
-    </header>
+<header class="Encabezado">
+
+  <div class="logo">
+    <a href="#inicio">
+      <img src="img/LOGO.svg" alt="Logo de Pedal X">
+    </a>
+  </div>
+
+  <button
+    type="button"
+    class="boton-menu"
+    id="boton-menu"
+    aria-label="Abrir menú"
+    aria-expanded="false"
+  >
+    ☰
+  </button>
+
+  <nav class="Navegacion" id="menu-navegacion">
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#modelos">Modelos</a>
+    <a href="#contacto">Contacto</a>
+
+    <a
+      href="#"
+      data-bs-toggle="modal"
+      data-bs-target="#ventana-carrito"
+    >
+      <i class="bi bi-cart3"></i>
+      Carrito (<span id="contador-carrito">0</span>)
+    </a>
+  </nav>
+
+</header>
 
 <main id="inicio">
 <div

@@ -31,3 +31,31 @@ formularioContacto.addEventListener("submit", function (evento) {
   mensajeFormulario.style.display = "block";
   formularioContacto.reset();
 });
+
+let botonMenu = document.getElementById("boton-menu");
+let menuNavegacion = document.getElementById("menu-navegacion");
+let enlacesMenu = menuNavegacion.querySelectorAll("a");
+
+botonMenu.addEventListener("click", function () {
+
+  let menuAbierto =
+    menuNavegacion.classList.toggle("mostrar-menu");
+
+  botonMenu.setAttribute(
+    "aria-expanded",
+    menuAbierto
+  );
+});
+
+enlacesMenu.forEach(function (enlace) {
+
+  enlace.addEventListener("click", function () {
+
+    menuNavegacion.classList.remove("mostrar-menu");
+
+    botonMenu.setAttribute(
+      "aria-expanded",
+      "false"
+    );
+  });
+});

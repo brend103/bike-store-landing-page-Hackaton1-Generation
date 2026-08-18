@@ -195,3 +195,54 @@ main {
   font-weight: bold;
   text-align: center;
 }
+/* Botón del menú hamburguesa */
+.boton-menu {
+  display: none;
+  background-color: transparent;
+  color: #FFFFFF;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+/* Diseño para celulares y pantallas pequeñas */
+@media (max-width: 768px) {
+
+  .Encabezado {
+    padding: 5px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .logo img {
+    width: 75px;
+  }
+
+  .boton-menu {
+    display: block;
+  }
+
+  .Navegacion {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #1565C0;
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .Navegacion.mostrar-menu {
+    display: flex;
+  }
+
+  .Navegacion a {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+  }
+}
